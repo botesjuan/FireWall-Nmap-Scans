@@ -10,6 +10,7 @@ The ACK scan is able to discover firewall rule sets and configuration.
 sudo nmap -sA $TARGET
 ```
 
+### Notice the unfiltered state of the open ports
 ![NMAP ACK Scan](firewall-ACT-scan.png)
 
 ## NULL Scan
