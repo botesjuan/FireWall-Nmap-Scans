@@ -10,6 +10,8 @@ The ACK scan is able to discover firewall rule sets and configuration.
 sudo nmap -sA $TARGET
 ```
 
+![NMAP ACK Scan](firewall-ACT-scan.png)
+
 ## NULL Scan
 
 The NULL scan work on the fact it get no response back.
