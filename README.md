@@ -10,7 +10,7 @@ The ACK scan is able to discover firewall rule sets and configuration.
 sudo nmap -sA $TARGET
 ```
 
-### Notice the unfiltered state of the open ports
+#### Notice the unfiltered state of the open ports
 ![NMAP ACK Scan](firewall-ACT-scan.png)
 
 ## NULL Scan
@@ -29,5 +29,14 @@ The FIN scan also work on the fact the scan do not get a response back if port o
 
 ```bash
 sudo nmap -sF $TARGET
+```
+
+## WINDOW Scan
+
+The WINDOW scan checks the TCP Window field of the RST packets returned.
+**Context** WINDOW scan against a server behind a firewall, ports are detected as closed, but the firewall does not block them.
+
+```bash
+sudo nmap -sW $TARGET
 ```
 
