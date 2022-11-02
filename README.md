@@ -41,3 +41,15 @@ The WINDOW scan checks the TCP Window field of the RST packets returned.
 sudo nmap -sW $TARGET
 ```
 
+## FRAGMENTED Scan
+
+The FRAGMENTED scan may, depending on the type of firewall/IDS, dividing the packet into smaller packets, get positive results using a stealth TCP SYN scan with single -f switch to split packets into 8 bytes. 
+**Context** An intrusion detection system (IDS) inspects network packets, and raises an alert whenever a malicious rule is met.  
+
+```bash
+sudo nmap -sS -f $TARGET
+```
+
+#### Notice the unfiltered state of the open ports
+![NMAP FRAGMENTED Scan](firewall-IDS-fragment-scan.png)
+
