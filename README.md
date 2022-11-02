@@ -1,5 +1,6 @@
 # FireWall-Nmap-Scans
-Sample of NMAP scans targeted at Firewalls, their configurations and systems behind the Firewalls.
+Sample of NMAP scans targeted at Firewalls, their configurations and systems behind the Firewalls.  
+These can be usefull in a external penetration test to validate firewall configuration or detect open services behind firewalls from public facing attacks.  
 
 ## ACK Scan
 
