@@ -43,13 +43,13 @@ sudo nmap -sW $TARGET
 
 ## FRAGMENTED Scan
 
-The FRAGMENTED scan may, depending on the type of firewall/IDS, dividing the packet into smaller packets, get positive results using a stealth TCP SYN scan with single -f switch to split packets into 8 bytes. 
+The FRAGMENTED scan may, depending on the type of firewall/IDS, dividing the packet into smaller packets, get positive results.  
 **Context** An intrusion detection system (IDS) inspects network packets, and raises an alert whenever a malicious rule is met.  
 
 ```bash
 sudo nmap -sS -f $TARGET
 ```
 
-#### Notice the unfiltered state of the open ports
+####  Use a stealth TCP SYN scan with single -f switch to split packets into 8 bytes. 
 ![NMAP FRAGMENTED Scan](firewall-IDS-fragment-scan.png)
 
