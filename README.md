@@ -3,8 +3,7 @@ Sample of NMAP scans targeted at Firewalls, their configurations and systems beh
 
 ## ACK Scan
 
-The ACK scan is able to discover firewall rule sets and configuration.
-
+The ACK scan is able to discover firewall rule sets and configuration.  
 **Context** Firewall in front of the target. Result of scan, result indicate which ports were not blocked by the firewall. 
 
 ```bash
