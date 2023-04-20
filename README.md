@@ -5,7 +5,7 @@ These can be usefull in a external penetration test to validate firewall configu
 ## ACK Scan
 
 The ACK scan is able to discover firewall rule sets and configuration.  
-**Context** Firewall in front of the target. Result of scan, result indicate which ports were not blocked by the firewall. 
+**Context** Firewall in front of the target. The result indicate which ports were not blocked by the firewall. 
 
 ```bash
 sudo nmap -sA $TARGET
