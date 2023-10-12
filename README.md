@@ -5,7 +5,8 @@ These can be usefull in a external penetration test to validate firewall configu
 ## Decoy Scan 
 
 >This scan use decoy public dns ip address to scan target and avoid IPS.  
->Firewall and IDS/IPS Evasion - HackTheBox Academy
+>[Firewall and IDS/IPS Evasion - HackTheBox Academy](https://academy.hackthebox.com/module/19/section/106) Scan by Using Decoys.  
+>UDP scan is activated with the `-sU` option. It can be combined with a TCP scan type such as SYN scan `-sS` to check both protocols during the same NMAP Decoy Scan.  
 
 ```bash
 sudo nmap -sS -Pn -n -T4 -A -sV -p 53 -D 8.8.8.8,8.8.4.4 10.129.2.48 -sU
