@@ -15,16 +15,19 @@ sudo nmap -sS -Pn -n -T4 -A -sV -p 3389 -D 8.8.8.8,8.8.4.4 10.129.2.48 -sU
 
 >Below NMAP scan examples:
 
-1. ***Decoy scan*** `` and comining it with UDP `-sU` + TCP SYN scan `-sS` and `-Pn` Treat all hosts as online, skip host discovery, include Set timing template higher `-T4`
+1. ***Decoy scan*** `` and comining it with UDP `-sU` also TCP SYN scan `-sS` and `-Pn` Treat all hosts as online, skip host discovery, include Set timing template higher `-T4`
 2. Basic scan of only port `3389` default ***NMAP SYN Scan***  
 3. NMAP SYN Scan plus `-Pn` Treat all hosts as online, skip host discoveryt  
 
->Other Switches:  
+>NMAP Switches:  
 
 * `-n` Never do DNS resolution  
 * `-A` Enable OS detection, version detection, script scanning, and traceroute  
 * `-sV` Probe open ports to determine service/version info
 * `-p 3389` Port ranges or Only scan specified ports  
+* `-Pn` Treat all hosts as online, skip host discovery  
+* `-sS` TCP SYN scan, default
+* `-sU` UDP  
 
 ![firewall-decoy-scan-all-hosts-online.png](firewall-decoy-scan-all-hosts-online.png)  
 
