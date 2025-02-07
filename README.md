@@ -9,8 +9,23 @@ These can be usefull in a external penetration test to validate firewall configu
 >UDP scan is activated with the `-sU` option. It can be combined with a TCP scan type such as SYN scan `-sS` to check both protocols during the same NMAP Decoy Scan.  
 
 ```bash
-sudo nmap -sS -Pn -n -T4 -A -sV -p 53 -D 8.8.8.8,8.8.4.4 10.129.2.48 -sU
+sudo nmap -sS -Pn -n -T4 -A -sV -p 3389 -D 8.8.8.8,8.8.4.4 10.129.2.48 -sU
 ```  
+
+>Below NMAP scan examples:
+
+1. ***Decoy scan*** `` and comining it with UDP `-sU` + TCP SYN scan `-sS` and `-Pn` Treat all hosts as online, skip host discovery, include Set timing template higher `-T4`
+2. Basic scan of only port `3389` default ***NMAP SYN Scan***  
+3. NMAP SYN Scan plus `-Pn` Treat all hosts as online, skip host discoveryt  
+
+>Other Switches:  
+
+* `-n` Never do DNS resolution  
+* `-A` Enable OS detection, version detection, script scanning, and traceroute  
+* `-sV` Probe open ports to determine service/version info
+* `-p 3389` Pport ranges or Only scan specified ports  
+
+![firewall-decoy-scan-all-hosts-online.png](firewall-decoy-scan-all-hosts-online.png)  
 
 ## ACK Scan
 
