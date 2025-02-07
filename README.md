@@ -1,8 +1,9 @@
-# FireWall-Nmap-Scans
+# FireWall Nmap Scans  
+
 Sample of NMAP scans targeted at Firewalls, their configurations and systems behind the Firewalls.  
 These can be usefull in a external penetration test to validate firewall configuration or detect open services behind firewalls from public facing attacks.  
 
-## Decoy Scan 
+## Decoy Scan  
 
 >This scan use decoy public dns ip address to scan target and avoid IPS.  
 >[Firewall and IDS/IPS Evasion - HackTheBox Academy](https://academy.hackthebox.com/module/19/section/106) Scan by Using Decoys.  
@@ -23,7 +24,7 @@ sudo nmap -sS -Pn -n -T4 -A -sV -p 3389 -D 8.8.8.8,8.8.4.4 10.129.2.48 -sU
 * `-n` Never do DNS resolution  
 * `-A` Enable OS detection, version detection, script scanning, and traceroute  
 * `-sV` Probe open ports to determine service/version info
-* `-p 3389` Pport ranges or Only scan specified ports  
+* `-p 3389` Port ranges or Only scan specified ports  
 
 ![firewall-decoy-scan-all-hosts-online.png](firewall-decoy-scan-all-hosts-online.png)  
 
